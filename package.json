@@ -1,7 +1,7 @@
 {
   "name": "action-stack-manager",
-  "version": "1.0.0",
-  "description": "action stack manager",
+  "version": "1.0.1",
+  "description": "manage redo/undo stack",
   "scripts": {
     "build": "tsc -w",
     "build": "tsc"
