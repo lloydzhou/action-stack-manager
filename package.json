@@ -1,0 +1,46 @@
+{
+  "name": "action-stack-manager",
+  "version": "1.0.0",
+  "description": "action stack manager",
+  "scripts": {
+    "build": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lloydzhou/action-stack-manager.git"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "redo",
+    "undo",
+    "stack",
+    "manager",
+    "history"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "eslint": "^6.7.2",
+    "typescript": "~4.1.5"
+  },
+  "author": "lloydzhou",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
